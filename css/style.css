@@ -1,0 +1,584 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+html, body{
+    height: 100%;
+}
+
+/* CENTRALIZANDO ELEMENTOS */
+.center{ /*Tag que centraliza o conteúdo*/
+    max-width: 1100px;
+    padding: 0 2%; /*Margem responsiva*/
+    margin: 0 auto;
+}
+
+.clear{
+    clear: both;
+}
+
+/* CABEÇALHO */
+header{
+    width: 100%;
+    background-color: #6b21b0;
+    padding: 8px 0;
+}
+
+.logo{
+    float: left;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold 700;
+    color: white;
+    margin-top: 10px;
+}
+
+.logo h2{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.form-login{
+    float: right;
+    margin-top: 5px;
+}
+
+.form-element p{
+    color: white;
+    font-size: 12px;
+}
+
+.form-login .form-element{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form-element input[type=email], .form-element input[type=password]{
+    margin-top: 4px;
+    border: 0;
+    padding: 2px;
+}
+
+.form-element input[type=email]:focus, .form-element input[type=password]:focus{
+    outline: 0;
+}
+
+.form-element input[type=submit]{
+    cursor: pointer;
+    border: 1px solid #400F6E;
+    padding: 2px 5px;
+    background-color: #7e36c2;
+    color: white;
+    border-radius: 3px;
+}
+
+.form-element input[type=submit]:hover{
+    background-color: #561594;
+}
+
+.form-login > p{
+    text-align: center;
+    padding: 3px 0 0 40px;
+}
+
+.form-login > p > a{
+    text-decoration: none;
+    color: #D4D4D4;
+    font-size: 12px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+
+main{
+    width: 100%;
+    background: linear-gradient(white, #D3D8E8);
+}
+
+/*CONTEÚDO DE INFORMAÇÃO*/
+
+.explain{
+    float: left;
+    width: 57%;
+    padding: 40px 0;
+}
+
+.explain img{
+    max-width: 100%;
+}
+
+.explain p{
+    width: 80%;
+    font-weight: bold;
+    word-spacing: -1px;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+/*CAMPO DE CRIAR CONTA*/
+
+.create-account{
+    float: right;
+    width: 43%;
+    padding: 10px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.create-account > div{
+    padding-top: 8px;
+}
+
+.create-account h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.create-account h3{
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.create-account form{
+    padding: 20px 0;
+    width: 100%;
+}
+
+.info input[type=text], 
+.info input[type=email], 
+.info input[type=password]{
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 5px 8px;
+    font-size: 19px;
+    letter-spacing: -1px;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #bdc7d8;
+}
+
+.info input[type=text]{
+    width: 49%;
+    float: left;
+}
+
+.info input[type=text]:first-of-type{
+    margin-right: 2%;
+}
+
+.create-account form input[type=text]:hover, 
+.create-account form input[type=email]:hover, 
+.create-account form input[type=password]:hover,
+.create-account form input[type=text]:focus, 
+.create-account form input[type=email]:focus, 
+.create-account form input[type=password]:focus{
+    outline: 0;
+}
+
+.create-account label{
+    display: block;
+    color: #90949c;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px 0 5px 0;
+}
+
+.birthday select{
+    float: left;
+    padding: 3px 10px 3px 5px;
+}
+
+.birthday select:focus{
+    outline: 0;
+}
+
+.gender span{
+    font-size: 18px;
+}
+
+.bloco{
+    display: inline-block;
+}
+
+.bloco span{
+    margin-right: 10px;
+}
+
+.bloco:last-of-type span{
+    margin: 0;
+}
+
+.choice-gender select{
+    height: 30px;
+    margin-top: 10px;
+    padding: 2px;
+    width: 100%;
+    font-size: 12px;
+}
+
+.choice-gender select:focus{
+    outline: 0;
+}
+
+.choice-gender p{
+    font-size: 12px;
+    color: #606770;
+    padding: 2px 0;
+}
+
+.choice-gender input[type=text]{
+    width: 100%;
+    margin: 8px 0;
+    padding: 5px 8px;
+    font-size: 18px;
+    color: black;
+    border-radius: 5px;
+    border: 1px solid #bdc7d8;
+    font-weight: 500;
+}
+
+.choice-gender{
+    display: none;
+}
+
+.show:checked ~ div.choice-gender{
+    display: block;
+}
+
+.terms p{
+    margin-top: 8px;
+    font-size: 12px;
+    text-align: left;
+    width: 80%;
+    color: #777;
+}
+
+.terms a{
+    text-decoration: none;
+    color: #784ebf;
+}
+
+.access{
+    margin: 20px 0;
+}
+
+.access button{
+    width: 45%;
+    padding: 5px 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid black;
+    background: linear-gradient(#C74234, #E04B3A);
+    color: white;
+    font-weight: bold;
+}
+
+.access button:hover{
+    background: linear-gradient(#c05145, #e96051);
+    cursor: pointer;
+}
+
+.access button > a{
+    color: white;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.create-account form > p{
+    margin: 10px 0;
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: bold;
+    color: #666;
+}
+
+.create-account form > p > a{
+    text-decoration: none;
+    color: #784ebf;
+}
+
+/* RODAPÉ */
+
+footer{
+    width: 100%;
+}
+
+.language{
+    margin: 10px 0 5px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.language a{
+    text-decoration: none;
+    font-size: 12px;
+    color: #693097;
+    padding-right: 5px;
+}
+
+.language a:first-of-type{
+    color: #737373;
+}
+
+.language button{
+    padding: 0 3px;
+    background-color: #f5f6f7;
+    cursor: pointer;
+    border: 1px solid #dddfe2;
+    border-radius: 2px;
+}
+
+.language button:focus{
+    outline: 0;
+}
+
+.language img{
+    width: 75%;
+    height: 75%;
+    vertical-align: top;
+}
+
+.links{
+    padding-bottom: 10px;
+}
+
+.links a{
+    text-decoration: none;
+    font-size: 11px;
+    color: #693097;
+    padding-right: 20px;
+}
+
+footer p{
+    font-size: 11px;
+    color: #737373;
+    margin-bottom: 20px;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 800px){
+    /* CABEÇALHO */
+
+.logo{
+    float: none;
+    width: 100%;
+}
+
+.logo h2{
+    text-align: center;
+    font-size: 48px;
+}
+
+.form-login{
+    float: none;
+    margin: 20px 0 10px 0;
+    text-align: center;
+}
+
+.form-login .form-element{
+    display: block;
+    margin: 15px;
+}
+
+.form-element p{
+    font-size: 16px;
+}
+
+.form-element input[type=email], .form-element input[type=password]{
+    margin-top: 5px;
+    padding: 5px;
+    width: 80%;
+    font-size: 16px;
+}
+
+.form-element input[type=submit]{
+    padding: 3px 8px;
+}
+
+.form-login > p{
+    padding: 0 5px;
+}
+
+.form-login > p > a{
+    font-size: 14px;
+}
+
+/*CONTEÚDO DE INFORMAÇÃO*/
+
+.explain{
+    float: none;
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+}
+
+.explain img{
+    max-width: 80%;
+    margin: 10px 0;
+}
+
+.explain p{
+    margin: 0 auto;
+    width: 80%;
+    font-size: 18px;
+}
+
+/*CAMPO DE CRIAR CONTA*/
+
+.create-account{
+    float: none;
+    width: 100%;
+}
+
+.create-account > div{
+    padding-bottom: 8px;
+}
+
+.create-account h2{
+    font-size: 40px;
+    text-align: center;
+}
+
+.create-account h3{
+    font-size: 24px;
+    text-align: center;
+}
+
+.create-account form{
+    padding: 20px 0 10px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.info input[type=text], 
+.info input[type=email], 
+.info input[type=password]{
+    font-size: 17px;
+}
+
+.create-account label{
+    text-align: center;
+    font-size: 20px;
+    padding: 15px
+}
+
+.birthday{
+    text-align: center;
+}
+
+.birthday label{
+    font-size: 20px;
+}
+
+.birthday select{
+    float: none;
+    padding: 5px 15px;
+}
+
+.gender{
+    width: 100%;
+    display: inline-block;
+}
+
+.bloco{
+    display: block;
+    margin-bottom: 8px;
+}
+
+.bloco span{
+    margin-right: 0px;
+}
+
+.bloco input[type=radio]{
+    margin-right: 10px;
+    margin-left: calc(40% - 18px);
+}
+
+.choice-gender select{
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.choice-gender p{
+    font-size: 14px;
+}
+
+.choice-gender input[type=text]{
+    margin: 20px 0;
+}
+
+.terms p{
+    margin: 0;
+    font-size: 14px;
+    text-align: justify;
+    width: 100%;
+}
+
+.access{
+    margin: 30px 0;
+    text-align: center;
+}
+
+.access button{
+    padding: 8px 10px;
+    font-size: 20px;
+}
+
+.create-account form > p{
+    text-align: center;
+    font-size: 14px;
+}
+
+.create-account form > p > a{
+    text-decoration: none;
+    color: #784ebf;
+}
+
+/* RODAPÉ */
+
+footer{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.language{
+    margin: 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.language a{
+    text-decoration: none;
+    font-size: 13px;
+    color: #693097;
+    padding-right: 5px;
+}
+
+.links{
+    padding-bottom: 20px;
+}
+
+.access{
+    margin: 20px 0;
+}
+
+.access button{
+    width: 150px;
+    padding: 8px 10px;
+}
+
+.links a{
+    font-size: 12px;
+    padding-right: 8px;
+}
+
+footer p{
+    font-size: 14px;
+    color: #737373;
+    margin-bottom: 20px;
+}
+}
+
